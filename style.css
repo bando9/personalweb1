@@ -171,7 +171,7 @@ header.sticky {
 }
 .services-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     align-items: center;
     text-align: center;
     gap: 2rem;
@@ -197,5 +197,8 @@ header.sticky {
 }
 .box:hover {
     transform: scale(1.01) translateY(-5px);
-    border-top: 5px solid var(--main-colors);
+    border-top: 5px solid var(--main-color);
+}
+.box:hover h3 {
+    color: var(--main-color)
 }
