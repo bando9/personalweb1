@@ -33,7 +33,7 @@ header {
     background: transparent;
     padding: 22px 16%;
     border-bottom: 1px solid transparent;
-    transition: all .4s ease;
+    transition: all .40s ease;
 }
 .logo img {
     width: 125px;
@@ -138,7 +138,6 @@ header.sticky {
     padding: 10px 16%;
     background: var(--bg-color);
     border-bottom: 1px solid #0e1630;
-    transition: .3s;
 }
 .about {
     display: grid;
@@ -269,9 +268,9 @@ header.sticky {
 
 .contact {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
-    /* gap: 5rem; */
+    gap: 5rem;
 }
 .contact-text h4 {
     margin: 15px 0;
@@ -355,3 +354,89 @@ form textarea {
     transition: all .40s ease;
     cursor: pointer;
 }
+
+.last-text p {
+    text-align: center;
+    padding: 15px;
+    color: var(--second-color);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.top {
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+.top i {
+    color: var(--text-color);
+    background: var(--main-color);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: .5rem;
+}
+
+@media (max-width: 1325px) {
+    header {
+        padding: 16px 3%;
+    }
+    header.sticky{
+        padding: 8px 3%;
+    }
+    section {
+        padding: 130px 3% 60px;
+    }
+}
+
+@media (max-width: 970px) {
+    :root{
+        --h1-font: 4.2rem;
+        --h2-font: 2.9rem;
+        --p-font: 1rem;
+    }
+
+    section {
+        padding: 70px 3% 60px;
+    }
+    .home {
+        height: 85vh;
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img {
+        text-align: center;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 830px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: -600px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #12141c;
+        text-align: left;
+        transition: all .40s ease;
+    }
+    .navbar a {
+        display: block;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .navbar.active {
+        top: 100%;
+    }
+    :root{
+        --h1-font: 3.7rem;
+        --h2-font: 2.7rem;
+    }
+} 
