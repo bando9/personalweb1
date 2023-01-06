@@ -18,6 +18,7 @@ menu.onclick = () => {
 // selesai menu burger
 
 
+// membuat scroll reveal
 const sr = ScrollReveal ({
     distance: '25px',
     duration: 2500,
@@ -25,5 +26,5 @@ const sr = ScrollReveal ({
 })
 
 sr.reveal('.home-text', {delay:190, origin: 'bottom'})
-
 sr.reveal('.about,.services,.portfolio,.contact', {delay:200, origin: 'bottom'})
+// selesai scroll reveal
